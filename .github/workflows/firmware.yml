@@ -14,6 +14,8 @@ jobs:
         - 'cynthion r0.2'
         - 'cynthion r0.4'
         - 'raspberry_pi_pico'
+        - 'adafruit_qtpy_rp2040'
+        - 'waveshare_rp2040_zero'
         include:
           - target-board: 'cynthion r0.2'
             board-major: 0

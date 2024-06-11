@@ -41,6 +41,12 @@ else
 	BOARD := $(APOLLO_BOARD)
 endif
 
+ifneq ($(filter $(APOLLO_BOARD), adafruit_qtpy_rp2040 waveshare_rp2040_zero),)
+    $(info $(APOLLO_BOARD) with RP2040)
+	BOARD := raspberry_pi_pico
+	PICO_BOARD := $(APOLLO_BOARD)
+endif
+
 # This should be set to 1 at this point if autodetection is enabled.
 BOARD_REVISION_DETECT ?= 0
 

@@ -156,3 +156,6 @@ resources.h
 _build
 
 firmware/lib
+
+# Nix build result
+result
